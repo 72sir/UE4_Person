@@ -1,0 +1,13 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{91844AF8-4601-5D93-049F-338F076B0168}",
+	"Category": "",
+	"Description": "",
+	"Plugins": [
+		{
+			"Name": "DonAINavigation",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/81b4bd085c8c41508edfeb160b6ddf62"
+		}
+	]
+}
