@@ -1,0 +1,887 @@
+﻿Log file open, 09/02/17 17:37:53
+LogInit:Display: Running engine for game: UE4_Person_v2
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-765887253) SRandInit(-765887253).
+LogTaskGraph: Started task graph with 5 named threads and 6 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.063306
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.16-CL-3514769
+LogInit: Engine Version: 4.16.2-3514769+++UE4+Release-4.16
+LogInit: Compatible Engine Version: 4.16.0-3452394+++UE4+Release-4.16
+LogInit: Net CL: 3452394
+LogDevObjectVersion: Number of dev versions registered: 16
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 9
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 17
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 23
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 15
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 4
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 1
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 3
+LogInit: Compiled (64-bit): Jun 29 2017 02:03:24
+LogInit: Compiled with Visual C++: 19.00.24215.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.16
+LogInit: Command line: 
+LogInit: Base directory: I:/Program Files/Epic Games/UE_4.16/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.09.02-14.37.53:602][  0]LogInit: Selected Device Profile: [Windows]
+[2017.09.02-14.37.53:602][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.09.02-14.37.53:608][  0]LogInit: Computer: PC-LITE
+[2017.09.02-14.37.53:608][  0]LogInit: User: User
+[2017.09.02-14.37.53:608][  0]LogInit: CPU Page size=4096, Cores=2
+[2017.09.02-14.37.53:608][  0]LogInit: High frequency timer resolution =3.609374 MHz
+[2017.09.02-14.37.53:608][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2017.09.02-14.37.53:608][  0]LogMemory: Platform Memory Stats for Windows
+[2017.09.02-14.37.53:608][  0]LogMemory: Process Physical Memory: 272.34 MB used, 272.34 MB peak
+[2017.09.02-14.37.53:608][  0]LogMemory: Process Virtual Memory: 258.22 MB used, 258.22 MB peak
+[2017.09.02-14.37.53:608][  0]LogMemory: Physical Memory: 3460.31 MB used,  4675.78 MB free, 8136.09 MB total
+[2017.09.02-14.37.53:608][  0]LogMemory: Virtual Memory: 634.04 MB used,  4675.78 MB free, 134217728.00 MB total
+[2017.09.02-14.37.53:657][  0]LogInit: Using OS detected language (ru-RU).
+[2017.09.02-14.37.53:657][  0]LogInit: Using OS detected locale (ru-RU).
+[2017.09.02-14.37.53:659][  0]LogTextLocalizationManager: No localization for 'ru-RU' exists, so 'en' will be used for the language.
+[2017.09.02-14.37.53:660][  0]LogTextLocalizationManager: No localization for 'ru-RU' exists, so 'en' will be used for the locale.
+[2017.09.02-14.37.54:451][  0]LogD3D11RHI: D3D11 adapters:
+[2017.09.02-14.37.55:000][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1050 Ti' (Feature Level 11_0)
+[2017.09.02-14.37.55:000][  0]LogD3D11RHI:       4014/0/4068 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2017.09.02-14.37.55:001][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.09.02-14.37.55:001][  0]LogD3D11RHI:       0/0/4068 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.09.02-14.37.55:001][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.09.02-14.37.55:004][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.09.02-14.37.55:004][  0]LogD3D11RHI:     GPU DeviceId: 0x1c82 (for the marketing name, search the web for "GPU Device Id")
+[2017.09.02-14.37.55:004][  0]LogWindows: EnumDisplayDevices:
+[2017.09.02-14.37.55:005][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1050 Ti' (P:1 D:1)
+[2017.09.02-14.37.55:005][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1050 Ti' (P:0 D:1)
+[2017.09.02-14.37.55:005][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1050 Ti' (P:0 D:0)
+[2017.09.02-14.37.55:005][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1050 Ti' (P:0 D:0)
+[2017.09.02-14.37.55:005][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2017.09.02-14.37.55:005][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1050 Ti
+[2017.09.02-14.37.55:005][  0]LogD3D11RHI:   Driver Version: 384.76 (internal:22.21.13.8476, unified:384.76)
+[2017.09.02-14.37.55:005][  0]LogD3D11RHI:      Driver Date: 6-27-2017
+[2017.09.02-14.37.55:005][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.09.02-14.37.55:611][  0]LogD3D11RHI: Async texture creation enabled
+[2017.09.02-14.37.55:636][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.09.02-14.37.55:729][  0]LogShaderCompilers: Guid format shader working directory is 8 characters bigger than the processId version (H:/git/UE4_Person/Intermediate/Shaders/WorkingDirectory/4152/).
+[2017.09.02-14.37.55:729][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'D:/TEMP/Temp/UnrealShaderWorkingDir/D5867FB6433BE1983A1192AB8C954695/'.
+[2017.09.02-14.37.55:729][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.09.02-14.37.56:556][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.09.02-14.37.56:586][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.09.02-14.37.56:615][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.09.02-14.37.56:646][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.09.02-14.37.56:676][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.09.02-14.37.56:707][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.09.02-14.37.56:738][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.09.02-14.37.56:769][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.09.02-14.37.56:794][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.09.02-14.37.56:824][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.09.02-14.37.56:853][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.09.02-14.37.56:884][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.09.02-14.37.56:913][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.09.02-14.37.56:944][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.09.02-14.37.56:973][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.09.02-14.37.57:033][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.09.02-14.37.57:033][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.09.02-14.37.57:056][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.09.02-14.37.57:119][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.09.02-14.37.57:138][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.09.02-14.37.57:168][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.09.02-14.37.57:197][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.09.02-14.37.57:227][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.09.02-14.37.57:258][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.09.02-14.37.57:258][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.09.02-14.37.57:540][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.09.02-14.37.57:636][  0]LogDerivedDataCache: Loaded boot cache 0.10s 90MB C:/Users/User/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2017.09.02-14.37.57:636][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/User/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc
+[2017.09.02-14.37.57:637][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file H:/git/UE4_Person/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.09.02-14.37.57:637][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.09.02-14.37.57:637][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file H:/git/UE4_Person/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.09.02-14.37.57:637][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.09.02-14.37.57:650][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.09.02-14.37.57:661][  0]LogDerivedDataCache: Using Local data cache path C:/Users/User/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.09.02-14.37.57:670][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2017.09.02-14.37.57:670][  0]LogSlate: Using Freetype 2.6.0
+[2017.09.02-14.37.57:670][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.09.02-14.37.57:670][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.09.02-14.37.57:922][  0]LogInit: Selected Device Profile: [Windows]
+[2017.09.02-14.37.57:996][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.09.02-14.37.58:115][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.09.02-14.37.58:139][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.09.02-14.37.58:163][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.09.02-14.37.58:163][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.09.02-14.37.58:163][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.09.02-14.37.58:631][  0]LogNetVersion: UE4_Person_v2 , NetCL: 3452394, EngineNetVer: 2, GameNetVer: 0 (Checksum: 3957557026)
+[2017.09.02-14.37.58:686][  0]LogAssetRegistry: FAssetRegistry took 0.0248 seconds to start up
+[2017.09.02-14.37.58:716][  0]LogPackageLocalizationCache: Processed 5 localized package path(s) for 1 prioritized culture(s) in 0.011870 seconds
+[2017.09.02-14.37.58:721][  0]LogUObjectArray: 34194 objects as part of root set at end of initial load.
+[2017.09.02-14.37.58:721][  0]LogUObjectAllocator: 7260424 out of 0 bytes used by permanent object pool.
+[2017.09.02-14.37.58:721][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.09.02-14.37.58:756][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.09.02-14.38.00:418][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.09.02-14.38.00:445][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.09.02-14.38.00:777][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.09.02-14.38.01:045][  0]SourceControl: Info Source control is disabled
+[2017.09.02-14.38.01:046][  0]SourceControl: Info Source control is disabled
+[2017.09.02-14.38.01:071][  0]SourceControl: Info Source control is disabled
+[2017.09.02-14.38.01:097][  0]SourceControl: Info Source control is disabled
+[2017.09.02-14.38.01:239][  0]LogLinker:Warning: Can't find file '/Game/ThirdPersonBP/ThirdPersonOverview'
+[2017.09.02-14.38.01:239][  0]LogLinker:Warning: Can't find file '/Game/ThirdPersonBP/ThirdPersonOverview'
+[2017.09.02-14.38.01:239][  0]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/ThirdPersonBP/ThirdPersonOverview.ThirdPersonOverview_C'
+[2017.09.02-14.38.01:485][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2017.09.02-14.38.01:829][  0]LogEngine: Initializing Engine...
+[2017.09.02-14.38.01:830][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.09.02-14.38.02:044][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.09.02-14.38.02:044][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.09.02-14.38.02:133][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.09.02-14.38.02:141][  0]LogInit: XAudio2 using 'Динамики (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.09.02-14.38.02:153][  0]LogInit: FAudioDevice initialized.
+[2017.09.02-14.38.02:201][  0]LogDerivedDataCache: Saved boot cache 0.05s 90MB C:/Users/User/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2017.09.02-14.38.02:217][  0]LogInit: Texture streaming: Enabled
+[2017.09.02-14.38.02:273][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.09.02-14.38.02:403][  0]LogInit: Transaction tracking system initialized
+[2017.09.02-14.38.02:571][  0]BlueprintLog: New page: Editor Load
+[2017.09.02-14.38.03:088][  0]LocalizationService: Info Localization service is disabled
+[2017.09.02-14.38.03:476][  0]LogConsoleResponse:Display: 
+[2017.09.02-14.38.03:627][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.09.02-14.38.03:627][  0]LogCook:Display: Mobile HDR setting 1
+[2017.09.02-14.38.03:804][  0]LogFileCache: Scanning file cache for directory 'H:/git/UE4_Person/Content/' took 0.01s
+[2017.09.02-14.38.04:199][  0]SourceControl: Info Source control is disabled
+[2017.09.02-14.38.04:199][  0]Cmd: MAP LOAD FILE="H:/git/UE4_Person/Content/Maps/SurvivalMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.09.02-14.38.04:199][  0]LightingResults: New page: Lighting Build
+[2017.09.02-14.38.04:221][  0]MapCheck: New page: Map Check
+[2017.09.02-14.38.04:221][  0]LightingResults: New page: Lighting Build
+[2017.09.02-14.38.04:685][  0]LogLinker:Warning: Can't find file '/Game/Geometry/Meshes/CubeMaterial'
+[2017.09.02-14.38.04:685][  0]LogLinker:Warning: Can't find file for asset '/Game/Geometry/Meshes/CubeMaterial' while loading H:/git/UE4_Person/Content/Geometry/Meshes/1M_Cube_Chamfer.uasset.
+[2017.09.02-14.38.04:685][  0]LoadErrors:Error: Error /Game/Geometry/Meshes/1M_Cube_Chamfer : Can't find file for asset. /Game/Geometry/Meshes/CubeMaterial
+[2017.09.02-14.38.04:685][  0]LogLinker:Warning: Can't find file '/Game/Geometry/Meshes/CubeMaterial'
+[2017.09.02-14.38.04:685][  0]LogLinker:Warning: Can't find file for asset '/Game/Geometry/Meshes/CubeMaterial' while loading H:/git/UE4_Person/Content/Geometry/Meshes/1M_Cube_Chamfer.uasset.
+[2017.09.02-14.38.04:685][  0]LoadErrors:Error: Error /Game/Geometry/Meshes/1M_Cube_Chamfer : Can't find file for asset. /Game/Geometry/Meshes/CubeMaterial
+[2017.09.02-14.38.05:051][  0]LogLinker:Warning: Can't find file '/Game/Geometry/Meshes/CubeMaterial'
+[2017.09.02-14.38.05:051][  0]LoadErrors: Info Failed to load /Game/Geometry/Meshes/CubeMaterial.CubeMaterial Referenced by 1M_Cube_Chamfer
+[2017.09.02-14.38.05:051][  0]LogLinker:Warning: Can't find file for asset '/Game/Geometry/Meshes/CubeMaterial' while loading NULL.
+[2017.09.02-14.38.05:051][  0]LoadErrors: Info Failed to load /Game/Geometry/Meshes/CubeMaterial.CubeMaterial Referenced by 1M_Cube_Chamfer
+[2017.09.02-14.38.05:452][  0]LogAIModule: Creating AISystem for world SurvivalMap
+[2017.09.02-14.38.05:465][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.09.02-14.38.05:495][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.09.02-14.38.05:525][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 30.134ms to complete.
+[2017.09.02-14.38.05:525][  0]LogFileHelpers: Loading map 'SurvivalMap' took 1.327
+[2017.09.02-14.38.05:643][  0]LogCollectionManager: Loaded 0 collections in 0.000631 seconds
+[2017.09.02-14.38.05:708][  0]LogFileCache: Scanning file cache for directory 'H:/git/UE4_Person/Saved/Collections/' took 0.01s
+[2017.09.02-14.38.05:708][  0]LogFileCache: Scanning file cache for directory 'H:/git/UE4_Person/Content/Developers/User/Collections/' took 0.01s
+[2017.09.02-14.38.05:708][  0]LogFileCache: Scanning file cache for directory 'H:/git/UE4_Person/Content/Collections/' took 0.01s
+[2017.09.02-14.38.05:708][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
+[2017.09.02-14.38.05:715][  0]LogContentBrowser: Native class hierarchy populated in 0.0077 seconds. Added 2334 classes and 495 folders.
+[2017.09.02-14.38.05:753][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2017.09.02-14.38.05:777][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2017.09.02-14.38.05:803][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
+[2017.09.02-14.38.05:830][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.09.02-14.38.05:835][  0]LogSlate: Took 0.000150 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.09.02-14.38.05:839][  0]LogSlate: Took 0.000326 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.09.02-14.38.05:841][  0]LogSlate: Took 0.000106 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.09.02-14.38.05:913][  0]LogRenderer: Reallocating scene render targets to support 1180x936 NumSamples 1 (Frame:1).
+[2017.09.02-14.38.06:025][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.09.02-14.38.06:073][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2017.09.02-14.38.06:074][  0]LogLoad: (Engine Initialization) Total time: 13.44 seconds
+[2017.09.02-14.38.06:074][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.41 seconds
+[2017.09.02-14.38.06:074][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
+[2017.09.02-14.38.06:413][  0]LogOcInput: OculusInput pre-init called
+[2017.09.02-14.38.06:413][  0]LogHMD: Starting GearVRController plugin
+[2017.09.02-14.38.06:432][  0]LogAssetRegistry: Asset discovery search completed in 7.7679 seconds
+[2017.09.02-14.38.06:434][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2017.09.02-14.38.06:434][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000029 seconds (updated 0 objects)
+[2017.09.02-14.38.06:435][  0]LogContentStreaming: Texture pool size now 3000 MB
+[2017.09.02-14.38.07:095][  3]LogSlate: Took 0.000119 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.09.02-14.38.07:397][  3]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0008 seconds. Added 112 classes and 0 folders.
+[2017.09.02-14.38.09:000][  3]LogSlate: Took 0.000122 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.09.02-14.39.36:354][267]LogSlate: Took 0.000098 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.09.02-14.40.43:709][974]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.09.02-14.40.43:709][974]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.09.02-14.42.00:429][273]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Characters/ST_CraftRecipe" FILE="H:/git/UE4_Person/Content/Blueprints/Characters/ST_CraftRecipe.uasset" SILENT=true
+[2017.09.02-14.42.00:432][273]LogSavePackage: Save=1.51ms
+[2017.09.02-14.42.00:432][273]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/ST_CraftRecipeE665BC764CD740364242C68B1A0264E0.tmp' to 'H:/git/UE4_Person/Content/Blueprints/Characters/ST_CraftRecipe.uasset'
+[2017.09.02-14.42.00:433][273]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Content/Blueprints/Characters/ST_CraftRecipe.uasset
+[2017.09.02-14.42.49:952][302]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Characters/ST_CraftRecipe" FILE="H:/git/UE4_Person/Content/Blueprints/Characters/ST_CraftRecipe.uasset" SILENT=true
+[2017.09.02-14.42.49:954][302]LogSavePackage: Save=0.48ms
+[2017.09.02-14.42.49:954][302]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/ST_CraftRecipe52BD090C40B44D199C6138A3538B02F2.tmp' to 'H:/git/UE4_Person/Content/Blueprints/Characters/ST_CraftRecipe.uasset'
+[2017.09.02-14.42.49:954][302]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Content/Blueprints/Characters/ST_CraftRecipe.uasset
+[2017.09.02-14.43.41:341][402]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2017.09.02-14.43.41:397][402]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2017.09.02-14.43.41:448][402]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2017.09.02-14.43.41:500][402]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2017.09.02-14.44.16:237][ 72]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Characters/ST_CraftRecipe" FILE="H:/git/UE4_Person/Content/Blueprints/Characters/ST_CraftRecipe.uasset" SILENT=true
+[2017.09.02-14.44.16:238][ 72]LogSavePackage: Save=0.73ms
+[2017.09.02-14.44.16:238][ 72]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/ST_CraftRecipeE18BABAC4B138443B292F7A6694D884A.tmp' to 'H:/git/UE4_Person/Content/Blueprints/Characters/ST_CraftRecipe.uasset'
+[2017.09.02-14.44.16:239][ 72]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Content/Blueprints/Characters/ST_CraftRecipe.uasset
+[2017.09.02-14.44.54:490][461]LogSlate: Took 0.000217 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensedItalic.ttf' (160K)
+[2017.09.02-14.45.21:396][451]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Characters/ST_CraftRecipe" FILE="H:/git/UE4_Person/Content/Blueprints/Characters/ST_CraftRecipe.uasset" SILENT=true
+[2017.09.02-14.45.21:399][451]LogSavePackage: Save=0.95ms
+[2017.09.02-14.45.21:399][451]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/ST_CraftRecipeE7C732124D016F43F0AA6096080BF2F1.tmp' to 'H:/git/UE4_Person/Content/Blueprints/Characters/ST_CraftRecipe.uasset'
+[2017.09.02-14.45.21:399][451]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Content/Blueprints/Characters/ST_CraftRecipe.uasset
+[2017.09.02-14.47.12:911][632]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.09.02-14.47.12:911][632]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.09.02-14.47.37:752][163]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.09.02-14.47.37:752][163]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.09.02-14.49.22:411][554]LogSlate: Took 0.000226 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.09.02-14.49.31:102][651]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/SurvivalMap' took 0.025
+[2017.09.02-14.49.31:104][651]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Characters/DT_CraftRecipes] ([1] browsable assets)...
+[2017.09.02-14.49.31:104][651]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Characters/DT_CraftRecipes]
+[2017.09.02-14.49.31:104][651]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Characters/DT_CraftRecipes" FILE="H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Characters/DT_CraftRecipes_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2017.09.02-14.49.31:150][651]LogSavePackage: Save=45.78ms
+[2017.09.02-14.49.31:150][651]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/DT_CraftRecipes_Auto1E17CBCC341EEC4EB5B163BB08F2CFFCF.tmp' to 'H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Characters/DT_CraftRecipes_Auto1.uasset'
+[2017.09.02-14.49.31:150][651]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Characters/DT_CraftRecipes_Auto1.uasset
+[2017.09.02-14.49.31:150][651]LogFileHelpers: Auto-saving content packages took 0.048
+[2017.09.02-14.50.40:201][225]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Characters/CraftComponent" FILE="H:/git/UE4_Person/Content/Blueprints/Characters/CraftComponent.uasset" SILENT=true
+[2017.09.02-14.50.40:205][225]LogSavePackage: Save=2.85ms
+[2017.09.02-14.50.40:205][225]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/CraftComponentBDE5645D479E432EE088029751A9B327.tmp' to 'H:/git/UE4_Person/Content/Blueprints/Characters/CraftComponent.uasset'
+[2017.09.02-14.50.40:205][225]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Content/Blueprints/Characters/CraftComponent.uasset
+[2017.09.02-14.52.05:524][911]BlueprintLog: New page: Compile CraftComponent
+[2017.09.02-14.53.25:171][721]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.09.02-14.53.25:171][721]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.09.02-14.53.34:029][768]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.09.02-14.53.34:029][768]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.09.02-14.58.45:757][  2]LogSlate: Took 0.000137 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.09.02-14.59.31:317][586]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/SurvivalMap' took 0.028
+[2017.09.02-14.59.31:319][586]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Characters/CraftComponent] ([1] browsable assets)...
+[2017.09.02-14.59.31:319][586]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Characters/CraftComponent]
+[2017.09.02-14.59.31:319][586]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Characters/CraftComponent" FILE="H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Characters/CraftComponent_Auto2.uasset" SILENT=false AUTOSAVING=true
+[2017.09.02-14.59.31:335][586]LogSavePackage: Save=14.51ms
+[2017.09.02-14.59.31:335][586]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/CraftComponent_Auto2321993E048BDD996C1E2BC8704F25786.tmp' to 'H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Characters/CraftComponent_Auto2.uasset'
+[2017.09.02-14.59.31:338][586]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Characters/CraftComponent_Auto2.uasset
+[2017.09.02-14.59.31:338][586]LogFileHelpers: Auto-saving content packages took 0.019
+[2017.09.02-15.00.02:016][685]BlueprintLog: New page: Compile CraftComponent
+[2017.09.02-15.00.24:625][313]BlueprintLog: New page: Compile StorageComponent
+[2017.09.02-15.00.25:673][404]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Storage/StorageComponent" FILE="H:/git/UE4_Person/Content/Blueprints/Storage/StorageComponent.uasset" SILENT=true
+[2017.09.02-15.00.25:877][404]LogSavePackage: Save=201.99ms
+[2017.09.02-15.00.25:877][404]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/StorageComponent910CC938454F9E8A9773689B586145CC.tmp' to 'H:/git/UE4_Person/Content/Blueprints/Storage/StorageComponent.uasset'
+[2017.09.02-15.00.25:878][404]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Content/Blueprints/Storage/StorageComponent.uasset
+[2017.09.02-15.04.43:722][ 84]BlueprintLog: New page: Compile CraftComponent
+[2017.09.02-15.04.44:281][131]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Characters/CraftComponent" FILE="H:/git/UE4_Person/Content/Blueprints/Characters/CraftComponent.uasset" SILENT=true
+[2017.09.02-15.04.44:349][131]LogSavePackage: Save=66.74ms
+[2017.09.02-15.04.44:349][131]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/CraftComponentB2229C9449A9DCE89F31ADAE3E1F961A.tmp' to 'H:/git/UE4_Person/Content/Blueprints/Characters/CraftComponent.uasset'
+[2017.09.02-15.04.44:350][131]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Content/Blueprints/Characters/CraftComponent.uasset
+[2017.09.02-15.09.09:403][429]BlueprintLog: New page: Compile StorageItem
+[2017.09.02-15.09.09:662][429]LogBlueprint:Warning: [Compiler RangeWeapon] Warning 'Ammo' does not inherit from 'Storage Item' ( Cast To Ammo  would always fail).
+[2017.09.02-15.09.40:805][354]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/SurvivalMap" FILE="H:/git/UE4_Person/Saved/Autosaves/Game/Maps/SurvivalMap_Auto3.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2017.09.02-15.09.41:258][354]LogSavePackage: Save=443.46ms
+[2017.09.02-15.09.41:258][354]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/SurvivalMap_Auto3DF34B4714C1AF48707772E8D5CDD001A.tmp' to 'H:/git/UE4_Person/Saved/Autosaves/Game/Maps/SurvivalMap_Auto3.umap'
+[2017.09.02-15.09.41:259][354]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Saved/Autosaves/Game/Maps/SurvivalMap_Auto3.umap
+[2017.09.02-15.09.41:260][354]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/SurvivalMap' took 0.485
+[2017.09.02-15.09.41:260][354]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.485
+[2017.09.02-15.09.41:262][354]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Blueprints/Storage/Ammo/Ammo_Bullets] ([1] browsable assets)...
+[2017.09.02-15.09.41:277][354]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Blueprints/Storage/Ammo/Ammo_Bullets.Ammo_Bullets]
+[2017.09.02-15.09.41:277][354]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Storage/Ammo/Ammo_Bullets]
+[2017.09.02-15.09.41:277][354]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Storage/Ammo/Ammo_Bullets" FILE="H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Ammo/Ammo_Bullets_Auto3.uasset" SILENT=false AUTOSAVING=true
+[2017.09.02-15.09.41:295][354]LogSavePackage: Save=15.69ms
+[2017.09.02-15.09.41:295][354]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/Ammo_Bullets_Auto3508285144A04EA56BD5B71B7576E76F8.tmp' to 'H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Ammo/Ammo_Bullets_Auto3.uasset'
+[2017.09.02-15.09.41:295][354]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Ammo/Ammo_Bullets_Auto3.uasset
+[2017.09.02-15.09.41:295][354]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Storage/Ammo/Ammo] ([1] browsable assets)...
+[2017.09.02-15.09.41:295][354]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Storage/Ammo/Ammo]
+[2017.09.02-15.09.41:295][354]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Storage/Ammo/Ammo" FILE="H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Ammo/Ammo_Auto3.uasset" SILENT=false AUTOSAVING=true
+[2017.09.02-15.09.41:371][354]LogSavePackage: Save=74.21ms
+[2017.09.02-15.09.41:371][354]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/Ammo_Auto3AC49DAE34F52FB691B8BA09C9ADE4D7D.tmp' to 'H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Ammo/Ammo_Auto3.uasset'
+[2017.09.02-15.09.41:372][354]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Ammo/Ammo_Auto3.uasset
+[2017.09.02-15.09.41:372][354]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Storage/Items/StorageItem] ([1] browsable assets)...
+[2017.09.02-15.09.41:372][354]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Storage/Items/StorageItem]
+[2017.09.02-15.09.41:372][354]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Storage/Items/StorageItem" FILE="H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/StorageItem_Auto3.uasset" SILENT=false AUTOSAVING=true
+[2017.09.02-15.09.41:455][354]LogSavePackage: Save=79.87ms
+[2017.09.02-15.09.41:455][354]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/StorageItem_Auto32B204DC04D0549085401D0B85735D8F1.tmp' to 'H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/StorageItem_Auto3.uasset'
+[2017.09.02-15.09.41:464][354]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/StorageItem_Auto3.uasset
+[2017.09.02-15.09.41:465][354]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Storage/Items/EquipAbles/EquipAbleItem] ([1] browsable assets)...
+[2017.09.02-15.09.41:465][354]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Storage/Items/EquipAbles/EquipAbleItem]
+[2017.09.02-15.09.41:508][354]LogSavePackage: Save=40.37ms
+[2017.09.02-15.09.41:508][354]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/EquipAbleItem_Auto34D62CE1541EB805502FC01817D2E4CEB.tmp' to 'H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/EquipAbles/EquipAbleItem_Auto3.uasset'
+[2017.09.02-15.09.41:509][354]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/EquipAbles/EquipAbleItem_Auto3.uasset
+[2017.09.02-15.09.41:509][354]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Storage/Items/EquipAbles/Weapons/Weapon] ([1] browsable assets)...
+[2017.09.02-15.09.41:509][354]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Storage/Items/EquipAbles/Weapons/Weapon]
+[2017.09.02-15.09.41:619][354]LogSavePackage: Save=107.52ms
+[2017.09.02-15.09.41:619][354]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/Weapon_Auto31779FDD945EFF89D4AC6FB8C93DED239.tmp' to 'H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/EquipAbles/Weapons/Weapon_Auto3.uasset'
+[2017.09.02-15.09.41:620][354]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/EquipAbles/Weapons/Weapon_Auto3.uasset
+[2017.09.02-15.09.41:620][354]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Blueprints/Storage/Items/Item_Sphere] ([1] browsable assets)...
+[2017.09.02-15.09.41:632][354]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Blueprints/Storage/Items/Item_Sphere.Item_Sphere]
+[2017.09.02-15.09.41:632][354]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Storage/Items/Item_Sphere]
+[2017.09.02-15.09.41:632][354]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Storage/Items/Item_Sphere" FILE="H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/Item_Sphere_Auto3.uasset" SILENT=false AUTOSAVING=true
+[2017.09.02-15.09.41:662][354]LogSavePackage: Save=27.19ms
+[2017.09.02-15.09.41:662][354]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/Item_Sphere_Auto366C557F24B99D04B37211BA9B6E28476.tmp' to 'H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/Item_Sphere_Auto3.uasset'
+[2017.09.02-15.09.41:668][354]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/Item_Sphere_Auto3.uasset
+[2017.09.02-15.09.41:669][354]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Storage/Items/EquipAbles/Weapons/Weapon_Gun] ([1] browsable assets)...
+[2017.09.02-15.09.41:669][354]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Storage/Items/EquipAbles/Weapons/Weapon_Gun]
+[2017.09.02-15.09.41:692][354]LogSavePackage: Save=19.86ms
+[2017.09.02-15.09.41:692][354]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/Weapon_Gun_Auto32498796E445D3B9F3C22448103238648.tmp' to 'H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/EquipAbles/Weapons/Weapon_Gun_Auto3.uasset'
+[2017.09.02-15.09.41:693][354]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/EquipAbles/Weapons/Weapon_Gun_Auto3.uasset
+[2017.09.02-15.09.41:693][354]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Storage/Items/EquipAbles/Weapons/RangeWeapon] ([1] browsable assets)...
+[2017.09.02-15.09.41:693][354]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Storage/Items/EquipAbles/Weapons/RangeWeapon]
+[2017.09.02-15.09.41:815][354]LogSavePackage: Save=120.15ms
+[2017.09.02-15.09.41:815][354]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/RangeWeapon_Auto37EC0AB52421A8838B1787387AD742C81.tmp' to 'H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/EquipAbles/Weapons/RangeWeapon_Auto3.uasset'
+[2017.09.02-15.09.41:816][354]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/EquipAbles/Weapons/RangeWeapon_Auto3.uasset
+[2017.09.02-15.09.41:816][354]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Blueprints/Storage/Items/Item_Cube] ([1] browsable assets)...
+[2017.09.02-15.09.41:829][354]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Blueprints/Storage/Items/Item_Cube.Item_Cube]
+[2017.09.02-15.09.41:829][354]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Storage/Items/Item_Cube]
+[2017.09.02-15.09.41:829][354]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Storage/Items/Item_Cube" FILE="H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/Item_Cube_Auto3.uasset" SILENT=false AUTOSAVING=true
+[2017.09.02-15.09.41:858][354]LogSavePackage: Save=27.57ms
+[2017.09.02-15.09.41:858][354]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/Item_Cube_Auto3F40C7C2E4601C664B3B3E0A9D59F4B84.tmp' to 'H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/Item_Cube_Auto3.uasset'
+[2017.09.02-15.09.41:905][354]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/Item_Cube_Auto3.uasset
+[2017.09.02-15.09.41:905][354]LogFileHelpers: Auto-saving content packages took 0.644
+[2017.09.02-15.09.41:906][354]LogSlate: Took 0.000126 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.09.02-15.10.33:259][514]BlueprintLog: New page: Compile StorageItem
+[2017.09.02-15.10.33:373][514]LogBlueprint:Warning: [Compiler RangeWeapon] Warning 'Ammo' does not inherit from 'Storage Item' ( Cast To Ammo  would always fail).
+[2017.09.02-15.15.20:192][831]BlueprintLog: New page: Compile StorageItem
+[2017.09.02-15.15.20:313][831]LogBlueprint:Warning: [Compiler RangeWeapon] Warning 'Ammo' does not inherit from 'Storage Item' ( Cast To Ammo  would always fail).
+[2017.09.02-15.15.21:286][831]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Storage/Items/StorageItem" FILE="H:/git/UE4_Person/Content/Blueprints/Storage/Items/StorageItem.uasset" SILENT=true
+[2017.09.02-15.15.21:524][831]LogSavePackage: Save=86.02ms
+[2017.09.02-15.15.21:524][831]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/StorageItemA75AC2C54E03302B89BDD794A4042A31.tmp' to 'H:/git/UE4_Person/Content/Blueprints/Storage/Items/StorageItem.uasset'
+[2017.09.02-15.15.21:524][831]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Content/Blueprints/Storage/Items/StorageItem.uasset
+[2017.09.02-15.15.39:049][263]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Storage/Items/StorageItem" FILE="H:/git/UE4_Person/Content/Blueprints/Storage/Items/StorageItem.uasset" SILENT=true
+[2017.09.02-15.15.39:135][263]LogSavePackage: Save=83.75ms
+[2017.09.02-15.15.39:135][263]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/StorageItemF7D08E684006F2BB0B6EEF848EF45DED.tmp' to 'H:/git/UE4_Person/Content/Blueprints/Storage/Items/StorageItem.uasset'
+[2017.09.02-15.15.39:135][263]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Content/Blueprints/Storage/Items/StorageItem.uasset
+[2017.09.02-15.15.39:778][339]BlueprintLog: New page: Compile StorageItem
+[2017.09.02-15.15.39:895][339]LogBlueprint:Warning: [Compiler RangeWeapon] Warning 'Ammo' does not inherit from 'Storage Item' ( Cast To Ammo  would always fail).
+[2017.09.02-15.16.36:576][ 65]BlueprintLog: New page: Collapse to Function
+[2017.09.02-15.17.57:377][614]LogEditorTransaction: Undo Delete current selection
+[2017.09.02-15.19.26:159][694]BlueprintLog: New page: Compile CraftComponent
+[2017.09.02-15.19.26:968][773]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Characters/CraftComponent" FILE="H:/git/UE4_Person/Content/Blueprints/Characters/CraftComponent.uasset" SILENT=true
+[2017.09.02-15.19.26:997][773]LogSavePackage: Save=25.94ms
+[2017.09.02-15.19.26:997][773]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/CraftComponent28EBD21C43FE97A31D8252B7D08EC336.tmp' to 'H:/git/UE4_Person/Content/Blueprints/Characters/CraftComponent.uasset'
+[2017.09.02-15.19.26:998][773]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Content/Blueprints/Characters/CraftComponent.uasset
+[2017.09.02-15.21.02:968][720]BlueprintLog: New page: Compile CraftComponent
+[2017.09.02-15.22.18:355][615]BlueprintLog: New page: Compile CraftComponent
+[2017.09.02-15.22.19:589][743]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Characters/CraftComponent" FILE="H:/git/UE4_Person/Content/Blueprints/Characters/CraftComponent.uasset" SILENT=true
+[2017.09.02-15.22.19:618][743]LogSavePackage: Save=27.79ms
+[2017.09.02-15.22.19:618][743]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/CraftComponent141FA52448D58DB1DD38CABCF3950097.tmp' to 'H:/git/UE4_Person/Content/Blueprints/Characters/CraftComponent.uasset'
+[2017.09.02-15.22.19:619][743]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Content/Blueprints/Characters/CraftComponent.uasset
+[2017.09.02-15.23.13:060][140]BlueprintLog: New page: Compile StorageItem
+[2017.09.02-15.23.13:170][140]LogBlueprint:Warning: [Compiler RangeWeapon] Warning 'Ammo' does not inherit from 'Storage Item' ( Cast To Ammo  would always fail).
+[2017.09.02-15.23.14:058][140]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Storage/Items/StorageItem" FILE="H:/git/UE4_Person/Content/Blueprints/Storage/Items/StorageItem.uasset" SILENT=true
+[2017.09.02-15.23.14:322][140]LogSavePackage: Save=261.02ms
+[2017.09.02-15.23.14:322][140]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/StorageItemBBB416274C78DEFD033B42BC69B30814.tmp' to 'H:/git/UE4_Person/Content/Blueprints/Storage/Items/StorageItem.uasset'
+[2017.09.02-15.23.14:323][140]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Content/Blueprints/Storage/Items/StorageItem.uasset
+[2017.09.02-15.23.15:198][240]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Storage/Items/StorageItem" FILE="H:/git/UE4_Person/Content/Blueprints/Storage/Items/StorageItem.uasset" SILENT=true
+[2017.09.02-15.23.15:283][240]LogSavePackage: Save=83.21ms
+[2017.09.02-15.23.15:283][240]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/StorageItem3982A3A94067D218D0DA7489B6DB4E2E.tmp' to 'H:/git/UE4_Person/Content/Blueprints/Storage/Items/StorageItem.uasset'
+[2017.09.02-15.23.15:283][240]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Content/Blueprints/Storage/Items/StorageItem.uasset
+[2017.09.02-15.23.29:911][279]BlueprintLog: New page: Compile StorageItem
+[2017.09.02-15.23.30:021][279]LogBlueprint:Warning: [Compiler RangeWeapon] Warning 'Ammo' does not inherit from 'Storage Item' ( Cast To Ammo  would always fail).
+[2017.09.02-15.23.54:788][700]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/SurvivalMap" FILE="H:/git/UE4_Person/Saved/Autosaves/Game/Maps/SurvivalMap_Auto4.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2017.09.02-15.23.55:224][700]LogSavePackage: Save=427.03ms
+[2017.09.02-15.23.55:224][700]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/SurvivalMap_Auto4A0D504E748352B9566E3469EF543C895.tmp' to 'H:/git/UE4_Person/Saved/Autosaves/Game/Maps/SurvivalMap_Auto4.umap'
+[2017.09.02-15.23.55:226][700]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Saved/Autosaves/Game/Maps/SurvivalMap_Auto4.umap
+[2017.09.02-15.23.55:227][700]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/SurvivalMap' took 0.468
+[2017.09.02-15.23.55:227][700]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.468
+[2017.09.02-15.23.55:228][700]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Storage/Ammo/Ammo_Bullets] ([1] browsable assets)...
+[2017.09.02-15.23.55:228][700]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Storage/Ammo/Ammo_Bullets]
+[2017.09.02-15.23.55:228][700]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Storage/Ammo/Ammo_Bullets" FILE="H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Ammo/Ammo_Bullets_Auto4.uasset" SILENT=false AUTOSAVING=true
+[2017.09.02-15.23.55:238][700]LogSavePackage: Save=8.09ms
+[2017.09.02-15.23.55:239][700]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/Ammo_Bullets_Auto4A2A571B04B14DC209C6C5C8672046EBD.tmp' to 'H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Ammo/Ammo_Bullets_Auto4.uasset'
+[2017.09.02-15.23.55:239][700]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Ammo/Ammo_Bullets_Auto4.uasset
+[2017.09.02-15.23.55:239][700]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Storage/Ammo/Ammo] ([1] browsable assets)...
+[2017.09.02-15.23.55:239][700]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Storage/Ammo/Ammo]
+[2017.09.02-15.23.55:239][700]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Storage/Ammo/Ammo" FILE="H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Ammo/Ammo_Auto4.uasset" SILENT=false AUTOSAVING=true
+[2017.09.02-15.23.55:247][700]LogSavePackage: Save=6.24ms
+[2017.09.02-15.23.55:247][700]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/Ammo_Auto4919D02A74B1104948CC8D58172946A7C.tmp' to 'H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Ammo/Ammo_Auto4.uasset'
+[2017.09.02-15.23.55:250][700]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Ammo/Ammo_Auto4.uasset
+[2017.09.02-15.23.55:250][700]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Storage/Items/StorageItem] ([1] browsable assets)...
+[2017.09.02-15.23.55:250][700]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Storage/Items/StorageItem]
+[2017.09.02-15.23.55:250][700]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Storage/Items/StorageItem" FILE="H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/StorageItem_Auto4.uasset" SILENT=false AUTOSAVING=true
+[2017.09.02-15.23.55:335][700]LogSavePackage: Save=82.78ms
+[2017.09.02-15.23.55:335][700]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/StorageItem_Auto406D88EAC4B65587830F4EDBD17D9F851.tmp' to 'H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/StorageItem_Auto4.uasset'
+[2017.09.02-15.23.55:335][700]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/StorageItem_Auto4.uasset
+[2017.09.02-15.23.55:335][700]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Storage/Items/EquipAbles/EquipAbleItem] ([1] browsable assets)...
+[2017.09.02-15.23.55:335][700]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Storage/Items/EquipAbles/EquipAbleItem]
+[2017.09.02-15.23.55:376][700]LogSavePackage: Save=38.99ms
+[2017.09.02-15.23.55:376][700]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/EquipAbleItem_Auto488CC84964851DE7B30756F8F969DD961.tmp' to 'H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/EquipAbles/EquipAbleItem_Auto4.uasset'
+[2017.09.02-15.23.55:377][700]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/EquipAbles/EquipAbleItem_Auto4.uasset
+[2017.09.02-15.23.55:377][700]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Storage/Items/EquipAbles/Weapons/Weapon] ([1] browsable assets)...
+[2017.09.02-15.23.55:377][700]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Storage/Items/EquipAbles/Weapons/Weapon]
+[2017.09.02-15.23.55:689][700]LogSavePackage: Save=137.64ms
+[2017.09.02-15.23.55:689][700]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/Weapon_Auto449E46EDC41C171C07FF5E496940288B2.tmp' to 'H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/EquipAbles/Weapons/Weapon_Auto4.uasset'
+[2017.09.02-15.23.55:689][700]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/EquipAbles/Weapons/Weapon_Auto4.uasset
+[2017.09.02-15.23.55:689][700]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Storage/Items/Item_Sphere] ([1] browsable assets)...
+[2017.09.02-15.23.55:689][700]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Storage/Items/Item_Sphere]
+[2017.09.02-15.23.55:689][700]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Storage/Items/Item_Sphere" FILE="H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/Item_Sphere_Auto4.uasset" SILENT=false AUTOSAVING=true
+[2017.09.02-15.23.55:710][700]LogSavePackage: Save=19.00ms
+[2017.09.02-15.23.55:710][700]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/Item_Sphere_Auto4405BAD4A413C786CF5EF4B9F96344019.tmp' to 'H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/Item_Sphere_Auto4.uasset'
+[2017.09.02-15.23.55:711][700]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/Item_Sphere_Auto4.uasset
+[2017.09.02-15.23.55:711][700]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Storage/Items/EquipAbles/Weapons/Weapon_Gun] ([1] browsable assets)...
+[2017.09.02-15.23.55:711][700]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Storage/Items/EquipAbles/Weapons/Weapon_Gun]
+[2017.09.02-15.23.55:733][700]LogSavePackage: Save=19.93ms
+[2017.09.02-15.23.55:733][700]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/Weapon_Gun_Auto4D3FCE9C64F7CEABFE780A8BDF50953C5.tmp' to 'H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/EquipAbles/Weapons/Weapon_Gun_Auto4.uasset'
+[2017.09.02-15.23.55:733][700]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/EquipAbles/Weapons/Weapon_Gun_Auto4.uasset
+[2017.09.02-15.23.55:734][700]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Storage/Items/EquipAbles/Weapons/RangeWeapon] ([1] browsable assets)...
+[2017.09.02-15.23.55:734][700]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Storage/Items/EquipAbles/Weapons/RangeWeapon]
+[2017.09.02-15.23.55:855][700]LogSavePackage: Save=119.08ms
+[2017.09.02-15.23.55:855][700]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/RangeWeapon_Auto42AAD25CC4982CDB80A720A9C67D53C01.tmp' to 'H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/EquipAbles/Weapons/RangeWeapon_Auto4.uasset'
+[2017.09.02-15.23.55:855][700]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/EquipAbles/Weapons/RangeWeapon_Auto4.uasset
+[2017.09.02-15.23.55:856][700]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Storage/Items/Item_Cube] ([1] browsable assets)...
+[2017.09.02-15.23.55:856][700]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Storage/Items/Item_Cube]
+[2017.09.02-15.23.55:856][700]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Storage/Items/Item_Cube" FILE="H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/Item_Cube_Auto4.uasset" SILENT=false AUTOSAVING=true
+[2017.09.02-15.23.55:878][700]LogSavePackage: Save=19.90ms
+[2017.09.02-15.23.55:878][700]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/Item_Cube_Auto44C35905B482ED8510AB94A8EEB4137D8.tmp' to 'H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/Item_Cube_Auto4.uasset'
+[2017.09.02-15.23.55:880][700]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/Item_Cube_Auto4.uasset
+[2017.09.02-15.23.55:880][700]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Characters/CraftComponent] ([1] browsable assets)...
+[2017.09.02-15.23.55:880][700]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Characters/CraftComponent]
+[2017.09.02-15.23.55:880][700]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Characters/CraftComponent" FILE="H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Characters/CraftComponent_Auto4.uasset" SILENT=false AUTOSAVING=true
+[2017.09.02-15.23.55:909][700]LogSavePackage: Save=27.67ms
+[2017.09.02-15.23.55:909][700]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/CraftComponent_Auto445F9C1134612D1CE034CDE8D13326828.tmp' to 'H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Characters/CraftComponent_Auto4.uasset'
+[2017.09.02-15.23.55:910][700]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Characters/CraftComponent_Auto4.uasset
+[2017.09.02-15.23.55:910][700]LogFileHelpers: Auto-saving content packages took 0.682
+[2017.09.02-15.25.07:172][950]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Characters/CraftComponent" FILE="H:/git/UE4_Person/Content/Blueprints/Characters/CraftComponent.uasset" SILENT=true
+[2017.09.02-15.25.07:217][950]LogSavePackage: Save=40.46ms
+[2017.09.02-15.25.07:217][950]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/CraftComponent4DEC997340EF2E34F3F145BD59F033F4.tmp' to 'H:/git/UE4_Person/Content/Blueprints/Characters/CraftComponent.uasset'
+[2017.09.02-15.25.07:218][950]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Content/Blueprints/Characters/CraftComponent.uasset
+[2017.09.02-15.25.08:771][135]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Storage/Items/StorageItem" FILE="H:/git/UE4_Person/Content/Blueprints/Storage/Items/StorageItem.uasset" SILENT=true
+[2017.09.02-15.25.08:856][135]LogSavePackage: Save=82.55ms
+[2017.09.02-15.25.08:856][135]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/StorageItem4BBFA548458C4007787C52AC0A417DE4.tmp' to 'H:/git/UE4_Person/Content/Blueprints/Storage/Items/StorageItem.uasset'
+[2017.09.02-15.25.08:857][135]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Content/Blueprints/Storage/Items/StorageItem.uasset
+[2017.09.02-15.25.13:480][672]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/SurvivalMap" FILE="H:/git/UE4_Person/Content/Maps/SurvivalMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2017.09.02-15.25.13:941][672]LogSavePackage: Save=431.56ms
+[2017.09.02-15.25.13:941][672]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/SurvivalMapE764C4C245B8C207292404A26D040369.tmp' to 'H:/git/UE4_Person/Content/Maps/SurvivalMap.umap'
+[2017.09.02-15.25.13:943][672]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Content/Maps/SurvivalMap.umap
+[2017.09.02-15.26.48:439][790]BlueprintLog: New page: Compile StorageComponent
+[2017.09.02-15.26.49:369][878]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Storage/StorageComponent" FILE="H:/git/UE4_Person/Content/Blueprints/Storage/StorageComponent.uasset" SILENT=true
+[2017.09.02-15.26.49:574][878]LogSavePackage: Save=202.66ms
+[2017.09.02-15.26.49:574][878]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/StorageComponent4BFFB3024C705F8DC029D0A33D2BDEAB.tmp' to 'H:/git/UE4_Person/Content/Blueprints/Storage/StorageComponent.uasset'
+[2017.09.02-15.26.49:575][878]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Content/Blueprints/Storage/StorageComponent.uasset
+[2017.09.02-15.28.27:339][747]LogEditorTransaction: Undo Delete current selection
+[2017.09.02-15.28.27:798][795]LogEditorTransaction: Undo Move Node
+[2017.09.02-15.28.28:371][859]LogEditorTransaction: Undo Create Pin Link
+[2017.09.02-15.28.28:808][907]LogEditorTransaction: Undo Delete current selection
+[2017.09.02-15.28.29:233][953]LogEditorTransaction: Undo Delete current selection
+[2017.09.02-15.28.30:116][ 54]LogEditorTransaction: Undo Delete current selection
+[2017.09.02-15.28.31:041][160]LogEditorTransaction: Undo Move Node
+[2017.09.02-15.28.31:509][211]LogEditorTransaction: Undo Delete current selection
+[2017.09.02-15.28.32:878][370]LogEditorTransaction: Undo Move Nodes
+[2017.09.02-15.28.33:205][404]LogEditorTransaction: Undo Create Pin Link
+[2017.09.02-15.28.33:523][437]LogEditorTransaction: Undo Move Nodes
+[2017.09.02-15.28.33:975][486]LogEditorTransaction: Undo Paste clipboard contents
+[2017.09.02-15.28.34:406][532]LogEditorTransaction: Undo Move Node
+[2017.09.02-15.31.40:160][605]BlueprintLog: New page: Compile StorageItem
+[2017.09.02-15.31.40:284][605]LogBlueprint:Warning: [Compiler RangeWeapon] Warning 'Ammo' does not inherit from 'Storage Item' ( Cast To Ammo  would always fail).
+[2017.09.02-15.31.42:007][665]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Storage/Items/StorageItem" FILE="H:/git/UE4_Person/Content/Blueprints/Storage/Items/StorageItem.uasset" SILENT=true
+[2017.09.02-15.31.42:244][665]LogSavePackage: Save=234.78ms
+[2017.09.02-15.31.42:244][665]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/StorageItem9D85F94146C24017AD8B7A8595169BB9.tmp' to 'H:/git/UE4_Person/Content/Blueprints/Storage/Items/StorageItem.uasset'
+[2017.09.02-15.31.42:245][665]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Content/Blueprints/Storage/Items/StorageItem.uasset
+[2017.09.02-15.31.54:885][515]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Storage/Items/StorageItem" FILE="H:/git/UE4_Person/Content/Blueprints/Storage/Items/StorageItem.uasset" SILENT=true
+[2017.09.02-15.31.54:966][515]LogSavePackage: Save=79.83ms
+[2017.09.02-15.31.54:966][515]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/StorageItemE4D00AD243FC4F397E32F2846D4A69E0.tmp' to 'H:/git/UE4_Person/Content/Blueprints/Storage/Items/StorageItem.uasset'
+[2017.09.02-15.31.54:966][515]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Content/Blueprints/Storage/Items/StorageItem.uasset
+[2017.09.02-15.31.59:278][ 29]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Characters/CraftComponent" FILE="H:/git/UE4_Person/Content/Blueprints/Characters/CraftComponent.uasset" SILENT=true
+[2017.09.02-15.31.59:307][ 29]LogSavePackage: Save=26.66ms
+[2017.09.02-15.31.59:307][ 29]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/CraftComponent7BC4D464488D91FDA016BF97AF0E61DF.tmp' to 'H:/git/UE4_Person/Content/Blueprints/Characters/CraftComponent.uasset'
+[2017.09.02-15.31.59:308][ 29]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Content/Blueprints/Characters/CraftComponent.uasset
+[2017.09.02-15.32.31:185][851]LogEditorTransaction: Undo Move Node
+[2017.09.02-15.32.31:584][897]LogEditorTransaction: Undo Create Pin Link
+[2017.09.02-15.32.31:997][945]LogEditorTransaction: Undo Move Node
+[2017.09.02-15.32.32:407][993]LogEditorTransaction: Undo Delete current selection
+[2017.09.02-15.32.32:795][ 38]LogEditorTransaction: Undo Delete current selection
+[2017.09.02-15.33.43:032][609]BlueprintLog: New page: Compile CraftComponent
+[2017.09.02-15.33.52:588][580]BlueprintLog: New page: Compile CraftComponent
+[2017.09.02-15.34.53:048][569]BlueprintLog: New page: Compile CraftComponent
+[2017.09.02-15.34.53:739][636]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Characters/CraftComponent" FILE="H:/git/UE4_Person/Content/Blueprints/Characters/CraftComponent.uasset" SILENT=true
+[2017.09.02-15.34.53:765][636]LogSavePackage: Save=23.78ms
+[2017.09.02-15.34.53:765][636]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/CraftComponentCC3F64F54561F5CEA3BFC2B5905AE415.tmp' to 'H:/git/UE4_Person/Content/Blueprints/Characters/CraftComponent.uasset'
+[2017.09.02-15.34.53:765][636]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Content/Blueprints/Characters/CraftComponent.uasset
+[2017.09.02-15.35.25:555][568]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/SurvivalMap" FILE="H:/git/UE4_Person/Saved/Autosaves/Game/Maps/SurvivalMap_Auto5.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2017.09.02-15.35.26:032][568]LogSavePackage: Save=465.37ms
+[2017.09.02-15.35.26:032][568]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/SurvivalMap_Auto5C21D52624C9E40EFAD077CB9AE2046C2.tmp' to 'H:/git/UE4_Person/Saved/Autosaves/Game/Maps/SurvivalMap_Auto5.umap'
+[2017.09.02-15.35.26:034][568]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Saved/Autosaves/Game/Maps/SurvivalMap_Auto5.umap
+[2017.09.02-15.35.26:034][568]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/SurvivalMap' took 0.523
+[2017.09.02-15.35.26:035][568]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.523
+[2017.09.02-15.35.26:036][568]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Storage/Ammo/Ammo_Bullets] ([1] browsable assets)...
+[2017.09.02-15.35.26:036][568]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Storage/Ammo/Ammo_Bullets]
+[2017.09.02-15.35.26:036][568]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Storage/Ammo/Ammo_Bullets" FILE="H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Ammo/Ammo_Bullets_Auto5.uasset" SILENT=false AUTOSAVING=true
+[2017.09.02-15.35.26:047][568]LogSavePackage: Save=8.60ms
+[2017.09.02-15.35.26:047][568]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/Ammo_Bullets_Auto517D7B1A14B2251821FBD6B97E53B0C1B.tmp' to 'H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Ammo/Ammo_Bullets_Auto5.uasset'
+[2017.09.02-15.35.26:047][568]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Ammo/Ammo_Bullets_Auto5.uasset
+[2017.09.02-15.35.26:048][568]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Storage/Ammo/Ammo] ([1] browsable assets)...
+[2017.09.02-15.35.26:048][568]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Storage/Ammo/Ammo]
+[2017.09.02-15.35.26:048][568]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Storage/Ammo/Ammo" FILE="H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Ammo/Ammo_Auto5.uasset" SILENT=false AUTOSAVING=true
+[2017.09.02-15.35.26:098][568]LogSavePackage: Save=6.51ms
+[2017.09.02-15.35.26:098][568]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/Ammo_Auto56DDECD6E48337ECC3BB8F98220EC0292.tmp' to 'H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Ammo/Ammo_Auto5.uasset'
+[2017.09.02-15.35.26:098][568]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Ammo/Ammo_Auto5.uasset
+[2017.09.02-15.35.26:098][568]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Storage/Items/EquipAbles/EquipAbleItem] ([1] browsable assets)...
+[2017.09.02-15.35.26:098][568]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Storage/Items/EquipAbles/EquipAbleItem]
+[2017.09.02-15.35.26:142][568]LogSavePackage: Save=41.40ms
+[2017.09.02-15.35.26:142][568]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/EquipAbleItem_Auto5CFF00D4D48D7988E3ABA9EA450F1B55D.tmp' to 'H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/EquipAbles/EquipAbleItem_Auto5.uasset'
+[2017.09.02-15.35.26:143][568]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/EquipAbles/EquipAbleItem_Auto5.uasset
+[2017.09.02-15.35.26:143][568]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Storage/Items/EquipAbles/Weapons/Weapon] ([1] browsable assets)...
+[2017.09.02-15.35.26:143][568]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Storage/Items/EquipAbles/Weapons/Weapon]
+[2017.09.02-15.35.26:261][568]LogSavePackage: Save=115.63ms
+[2017.09.02-15.35.26:261][568]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/Weapon_Auto554715CBA42C4ABEB08293591BC92DFDE.tmp' to 'H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/EquipAbles/Weapons/Weapon_Auto5.uasset'
+[2017.09.02-15.35.26:262][568]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/EquipAbles/Weapons/Weapon_Auto5.uasset
+[2017.09.02-15.35.26:262][568]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Storage/Items/Item_Sphere] ([1] browsable assets)...
+[2017.09.02-15.35.26:262][568]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Storage/Items/Item_Sphere]
+[2017.09.02-15.35.26:262][568]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Storage/Items/Item_Sphere" FILE="H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/Item_Sphere_Auto5.uasset" SILENT=false AUTOSAVING=true
+[2017.09.02-15.35.26:285][568]LogSavePackage: Save=20.35ms
+[2017.09.02-15.35.26:285][568]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/Item_Sphere_Auto5C759AE8647F2FBA8212A678395D756C5.tmp' to 'H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/Item_Sphere_Auto5.uasset'
+[2017.09.02-15.35.26:286][568]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/Item_Sphere_Auto5.uasset
+[2017.09.02-15.35.26:286][568]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Storage/Items/EquipAbles/Weapons/Weapon_Gun] ([1] browsable assets)...
+[2017.09.02-15.35.26:286][568]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Storage/Items/EquipAbles/Weapons/Weapon_Gun]
+[2017.09.02-15.35.26:320][568]LogSavePackage: Save=20.20ms
+[2017.09.02-15.35.26:320][568]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/Weapon_Gun_Auto57626ED794CCF5597812D5C85E130427D.tmp' to 'H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/EquipAbles/Weapons/Weapon_Gun_Auto5.uasset'
+[2017.09.02-15.35.26:321][568]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/EquipAbles/Weapons/Weapon_Gun_Auto5.uasset
+[2017.09.02-15.35.26:321][568]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Storage/Items/EquipAbles/Weapons/RangeWeapon] ([1] browsable assets)...
+[2017.09.02-15.35.26:321][568]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Storage/Items/EquipAbles/Weapons/RangeWeapon]
+[2017.09.02-15.35.26:450][568]LogSavePackage: Save=126.92ms
+[2017.09.02-15.35.26:450][568]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/RangeWeapon_Auto5A443179F40A92D0365A925867428451D.tmp' to 'H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/EquipAbles/Weapons/RangeWeapon_Auto5.uasset'
+[2017.09.02-15.35.26:451][568]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/EquipAbles/Weapons/RangeWeapon_Auto5.uasset
+[2017.09.02-15.35.26:451][568]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Storage/Items/Item_Cube] ([1] browsable assets)...
+[2017.09.02-15.35.26:451][568]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Storage/Items/Item_Cube]
+[2017.09.02-15.35.26:451][568]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Storage/Items/Item_Cube" FILE="H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/Item_Cube_Auto5.uasset" SILENT=false AUTOSAVING=true
+[2017.09.02-15.35.26:534][568]LogSavePackage: Save=21.19ms
+[2017.09.02-15.35.26:534][568]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/Item_Cube_Auto5DAAA757F428EEF72EF50DFA5E7C669F5.tmp' to 'H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/Item_Cube_Auto5.uasset'
+[2017.09.02-15.35.26:535][568]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Saved/Autosaves/Game/Blueprints/Storage/Items/Item_Cube_Auto5.uasset
+[2017.09.02-15.35.26:535][568]LogFileHelpers: Auto-saving content packages took 0.499
+[2017.09.02-15.38.23:377][105]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Characters/DT_CraftRecipes" FILE="H:/git/UE4_Person/Content/Blueprints/Characters/DT_CraftRecipes.uasset" SILENT=true
+[2017.09.02-15.38.23:379][105]LogSavePackage: Save=0.82ms
+[2017.09.02-15.38.23:379][105]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/DT_CraftRecipesCBCA4F9447EAAEA7F86EC78D2F323D69.tmp' to 'H:/git/UE4_Person/Content/Blueprints/Characters/DT_CraftRecipes.uasset'
+[2017.09.02-15.38.23:379][105]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Content/Blueprints/Characters/DT_CraftRecipes.uasset
+[2017.09.02-15.38.23:382][105]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Storage/Ammo/Ammo" FILE="H:/git/UE4_Person/Content/Blueprints/Storage/Ammo/Ammo.uasset" SILENT=true
+[2017.09.02-15.38.23:390][105]LogSavePackage: Save=6.21ms
+[2017.09.02-15.38.23:390][105]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/Ammo6032C8C442C6B9B26DA069954F84287A.tmp' to 'H:/git/UE4_Person/Content/Blueprints/Storage/Ammo/Ammo.uasset'
+[2017.09.02-15.38.23:391][105]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Content/Blueprints/Storage/Ammo/Ammo.uasset
+[2017.09.02-15.38.23:394][105]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Storage/Ammo/Ammo_Bullets" FILE="H:/git/UE4_Person/Content/Blueprints/Storage/Ammo/Ammo_Bullets.uasset" SILENT=true
+[2017.09.02-15.38.23:567][105]LogSavePackage: Save=16.79ms
+[2017.09.02-15.38.23:567][105]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/Ammo_BulletsEF66F84645C2C60F5E5E46BDE996F9E5.tmp' to 'H:/git/UE4_Person/Content/Blueprints/Storage/Ammo/Ammo_Bullets.uasset'
+[2017.09.02-15.38.23:568][105]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Content/Blueprints/Storage/Ammo/Ammo_Bullets.uasset
+[2017.09.02-15.38.23:573][105]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Storage/Items/EquipAbles/EquipAbleItem" FILE="H:/git/UE4_Person/Content/Blueprints/Storage/Items/EquipAbles/EquipAbleItem.uasset" SILENT=true
+[2017.09.02-15.38.23:621][105]LogSavePackage: Save=43.60ms
+[2017.09.02-15.38.23:621][105]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/EquipAbleItem033EF79E4311A585923CA59B44615FA4.tmp' to 'H:/git/UE4_Person/Content/Blueprints/Storage/Items/EquipAbles/EquipAbleItem.uasset'
+[2017.09.02-15.38.23:622][105]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Content/Blueprints/Storage/Items/EquipAbles/EquipAbleItem.uasset
+[2017.09.02-15.38.23:625][105]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Storage/Items/EquipAbles/Weapons/RangeWeapon" FILE="H:/git/UE4_Person/Content/Blueprints/Storage/Items/EquipAbles/Weapons/RangeWeapon.uasset" SILENT=true
+[2017.09.02-15.38.23:747][105]LogSavePackage: Save=118.68ms
+[2017.09.02-15.38.23:747][105]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/RangeWeapon4210758A41BD271B4EE280BFDEDE3316.tmp' to 'H:/git/UE4_Person/Content/Blueprints/Storage/Items/EquipAbles/Weapons/RangeWeapon.uasset'
+[2017.09.02-15.38.23:748][105]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Content/Blueprints/Storage/Items/EquipAbles/Weapons/RangeWeapon.uasset
+[2017.09.02-15.38.23:751][105]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Storage/Items/EquipAbles/Weapons/Weapon" FILE="H:/git/UE4_Person/Content/Blueprints/Storage/Items/EquipAbles/Weapons/Weapon.uasset" SILENT=true
+[2017.09.02-15.38.23:859][105]LogSavePackage: Save=106.19ms
+[2017.09.02-15.38.23:859][105]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/Weapon7B89502040E3CA9417F24EA9943F6180.tmp' to 'H:/git/UE4_Person/Content/Blueprints/Storage/Items/EquipAbles/Weapons/Weapon.uasset'
+[2017.09.02-15.38.23:860][105]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Content/Blueprints/Storage/Items/EquipAbles/Weapons/Weapon.uasset
+[2017.09.02-15.38.23:863][105]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Storage/Items/EquipAbles/Weapons/Weapon_Gun" FILE="H:/git/UE4_Person/Content/Blueprints/Storage/Items/EquipAbles/Weapons/Weapon_Gun.uasset" SILENT=true
+[2017.09.02-15.38.23:886][105]LogSavePackage: Save=19.57ms
+[2017.09.02-15.38.23:886][105]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/Weapon_GunE9FA360541BDC1DE51493C8CEFF7889F.tmp' to 'H:/git/UE4_Person/Content/Blueprints/Storage/Items/EquipAbles/Weapons/Weapon_Gun.uasset'
+[2017.09.02-15.38.23:886][105]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Content/Blueprints/Storage/Items/EquipAbles/Weapons/Weapon_Gun.uasset
+[2017.09.02-15.38.23:889][105]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Storage/Items/Item_Cube" FILE="H:/git/UE4_Person/Content/Blueprints/Storage/Items/Item_Cube.uasset" SILENT=true
+[2017.09.02-15.38.23:911][105]LogSavePackage: Save=19.99ms
+[2017.09.02-15.38.23:911][105]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/Item_Cube2A7A2D19494AB658366C11B384A628FA.tmp' to 'H:/git/UE4_Person/Content/Blueprints/Storage/Items/Item_Cube.uasset'
+[2017.09.02-15.38.23:912][105]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Content/Blueprints/Storage/Items/Item_Cube.uasset
+[2017.09.02-15.38.23:914][105]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Storage/Items/Item_Sphere" FILE="H:/git/UE4_Person/Content/Blueprints/Storage/Items/Item_Sphere.uasset" SILENT=true
+[2017.09.02-15.38.23:936][105]LogSavePackage: Save=19.40ms
+[2017.09.02-15.38.23:936][105]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/Item_Sphere1F7A59C146A12FC54CC51FA8FBD63B76.tmp' to 'H:/git/UE4_Person/Content/Blueprints/Storage/Items/Item_Sphere.uasset'
+[2017.09.02-15.38.23:936][105]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Content/Blueprints/Storage/Items/Item_Sphere.uasset
+[2017.09.02-15.38.23:974][105]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/SurvivalMap" FILE="H:/git/UE4_Person/Content/Maps/SurvivalMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2017.09.02-15.38.24:436][105]LogSavePackage: Save=432.13ms
+[2017.09.02-15.38.24:436][105]LogSavePackage: Moving 'H:/git/UE4_Person/Saved/SurvivalMap39BB89B0457D7336353DA981924F9837.tmp' to 'H:/git/UE4_Person/Content/Maps/SurvivalMap.umap'
+[2017.09.02-15.38.24:437][105]LogSavePackage:Display: Finished SavePackage H:/git/UE4_Person/Content/Maps/SurvivalMap.umap
+[2017.09.02-15.38.24:451][105]LogFileHelpers: Saving map 'SurvivalMap' took 0.512
+[2017.09.02-15.38.24:750][106]Cmd: QUIT_EDITOR
+[2017.09.02-15.38.24:758][106]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.09.02-15.38.24:765][106]LogExit: Preparing to exit.
+[2017.09.02-15.38.25:828][106]LogExit: Editor shut down
+[2017.09.02-15.38.25:831][106]LogExit: Transaction tracking system shut down
+[2017.09.02-15.38.25:939][106]LogObj: Freed 0b from 0 cluster array pools.
+[2017.09.02-15.38.25:939][106]LogExit: Object subsystem successfully closed.
+[2017.09.02-15.38.25:956][106]LogD3D11RHI: Shutdown
+[2017.09.02-15.38.25:956][106]LogD3D11RHI: CleanupD3DDevice
+[2017.09.02-15.38.26:026][106]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.09.02-15.38.26:032][106]LogModuleManager: Shutting down and abandoning module DataTableEditor (532)
+[2017.09.02-15.38.26:032][106]LogModuleManager: Shutting down and abandoning module BlueprintGraph (530)
+[2017.09.02-15.38.26:032][106]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (528)
+[2017.09.02-15.38.26:032][106]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (526)
+[2017.09.02-15.38.26:032][106]LogModuleManager: Shutting down and abandoning module CrashTracker (524)
+[2017.09.02-15.38.26:032][106]LogModuleManager: Shutting down and abandoning module SceneOutliner (522)
+[2017.09.02-15.38.26:032][106]LogModuleManager: Shutting down and abandoning module AddContentDialog (520)
+[2017.09.02-15.38.26:032][106]LogDirectoryWatcher: A directory notification for 'I:/Program Files/Epic Games/UE_4.16/FeaturePacks/' was aborted.
+[2017.09.02-15.38.26:037][106]LogModuleManager: Shutting down and abandoning module WidgetCarousel (519)
+[2017.09.02-15.38.26:037][106]LogModuleManager: Shutting down and abandoning module EditorWidgets (516)
+[2017.09.02-15.38.26:037][106]LogModuleManager: Shutting down and abandoning module CollectionManager (514)
+[2017.09.02-15.38.26:037][106]LogDirectoryWatcher: A directory notification for 'H:/git/UE4_Person/Content/Collections/' was aborted.
+[2017.09.02-15.38.26:037][106]LogDirectoryWatcher: A directory notification for 'H:/git/UE4_Person/Content/Developers/User/Collections/' was aborted.
+[2017.09.02-15.38.26:037][106]LogDirectoryWatcher: A directory notification for 'H:/git/UE4_Person/Saved/Collections/' was aborted.
+[2017.09.02-15.38.26:037][106]LogModuleManager: Shutting down and abandoning module StatsViewer (512)
+[2017.09.02-15.38.26:037][106]LogModuleManager: Shutting down and abandoning module FoliageEdit (510)
+[2017.09.02-15.38.26:037][106]LogModuleManager: Shutting down and abandoning module LandscapeEditor (508)
+[2017.09.02-15.38.26:037][106]LogModuleManager: Shutting down and abandoning module MeshPaintMode (506)
+[2017.09.02-15.38.26:037][106]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (504)
+[2017.09.02-15.38.26:037][106]LogModuleManager: Shutting down and abandoning module ActorPickerMode (502)
+[2017.09.02-15.38.26:037][106]LogModuleManager: Shutting down and abandoning module GeometryMode (500)
+[2017.09.02-15.38.26:037][106]LogModuleManager: Shutting down and abandoning module TextureAlignMode (498)
+[2017.09.02-15.38.26:037][106]LogModuleManager: Shutting down and abandoning module BspMode (496)
+[2017.09.02-15.38.26:037][106]LogModuleManager: Shutting down and abandoning module HardwareSurvey (494)
+[2017.09.02-15.38.26:037][106]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (492)
+[2017.09.02-15.38.26:037][106]LogModuleManager: Shutting down and abandoning module AutomationWorker (490)
+[2017.09.02-15.38.26:037][106]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (488)
+[2017.09.02-15.38.26:037][106]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (486)
+[2017.09.02-15.38.26:037][106]LogModuleManager: Shutting down and abandoning module PlacementMode (485)
+[2017.09.02-15.38.26:037][106]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (482)
+[2017.09.02-15.38.26:037][106]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (480)
+[2017.09.02-15.38.26:037][106]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (478)
+[2017.09.02-15.38.26:037][106]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (476)
+[2017.09.02-15.38.26:037][106]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (474)
+[2017.09.02-15.38.26:037][106]LogModuleManager: Shutting down and abandoning module Media (473)
+[2017.09.02-15.38.26:037][106]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (470)
+[2017.09.02-15.38.26:037][106]LogModuleManager: Shutting down and abandoning module CharacterAI (468)
+[2017.09.02-15.38.26:037][106]LogModuleManager: Shutting down and abandoning module AudioCapture (466)
+[2017.09.02-15.38.26:037][106]LogModuleManager: Shutting down and abandoning module SequenceRecorder (465)
+[2017.09.02-15.38.26:037][106]LogModuleManager: Shutting down and abandoning module SmartSnapping (462)
+[2017.09.02-15.38.26:037][106]LogModuleManager: Shutting down and abandoning module SessionServices (460)
+[2017.09.02-15.38.26:037][106]LogModuleManager: Shutting down and abandoning module ViewportSnapping (458)
+[2017.09.02-15.38.26:037][106]LogModuleManager: Shutting down and abandoning module ViewportInteraction (456)
+[2017.09.02-15.38.26:037][106]LogModuleManager: Shutting down and abandoning module ClothPainter (454)
+[2017.09.02-15.38.26:037][106]LogModuleManager: Shutting down and abandoning module LogVisualizer (452)
+[2017.09.02-15.38.26:037][106]LogModuleManager: Shutting down and abandoning module IntroTutorials (450)
+[2017.09.02-15.38.26:038][106]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (449)
+[2017.09.02-15.38.26:038][106]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (446)
+[2017.09.02-15.38.26:038][106]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (444)
+[2017.09.02-15.38.26:038][106]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (442)
+[2017.09.02-15.38.26:038][106]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (440)
+[2017.09.02-15.38.26:038][106]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (439)
+[2017.09.02-15.38.26:675][106]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (436)
+[2017.09.02-15.38.26:675][106]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (434)
+[2017.09.02-15.38.26:675][106]LogModuleManager: Shutting down and abandoning module InputBindingEditor (432)
+[2017.09.02-15.38.26:676][106]LogModuleManager: Shutting down and abandoning module MergeActors (430)
+[2017.09.02-15.38.26:676][106]LogModuleManager: Shutting down and abandoning module SizeMap (428)
+[2017.09.02-15.38.26:676][106]LogModuleManager: Shutting down and abandoning module TreeMap (426)
+[2017.09.02-15.38.26:676][106]LogModuleManager: Shutting down and abandoning module ReferenceViewer (424)
+[2017.09.02-15.38.26:676][106]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (422)
+[2017.09.02-15.38.26:676][106]LogModuleManager: Shutting down and abandoning module LocalizationService (421)
+[2017.09.02-15.38.26:676][106]LogModuleManager: Shutting down and abandoning module HardwareTargeting (418)
+[2017.09.02-15.38.26:676][106]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (416)
+[2017.09.02-15.38.26:676][106]LogModuleManager: Shutting down and abandoning module UndoHistory (414)
+[2017.09.02-15.38.26:676][106]LogModuleManager: Shutting down and abandoning module UserFeedback (412)
+[2017.09.02-15.38.26:676][106]LogModuleManager: Shutting down and abandoning module XmlParser (410)
+[2017.09.02-15.38.26:676][106]LogModuleManager: Shutting down and abandoning module Blutility (408)
+[2017.09.02-15.38.26:676][106]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (406)
+[2017.09.02-15.38.26:676][106]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (405)
+[2017.09.02-15.38.26:676][106]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (402)
+[2017.09.02-15.38.26:677][106]LogModuleManager: Shutting down and abandoning module SettingsEditor (400)
+[2017.09.02-15.38.26:677][106]LogModuleManager: Shutting down and abandoning module ProjectLauncher (398)
+[2017.09.02-15.38.26:677][106]LogModuleManager: Shutting down and abandoning module SessionFrontend (396)
+[2017.09.02-15.38.26:677][106]LogModuleManager: Shutting down and abandoning module ProfilerClient (394)
+[2017.09.02-15.38.26:677][106]LogModuleManager: Shutting down and abandoning module DeviceManager (392)
+[2017.09.02-15.38.26:677][106]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (391)
+[2017.09.02-15.38.26:719][106]LogModuleManager: Shutting down and abandoning module AutomationController (388)
+[2017.09.02-15.38.26:719][106]LogModuleManager: Shutting down and abandoning module AutomationWindow (386)
+[2017.09.02-15.38.26:719][106]LogModuleManager: Shutting down and abandoning module Layers (384)
+[2017.09.02-15.38.26:719][106]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (382)
+[2017.09.02-15.38.26:719][106]LogModuleManager: Shutting down and abandoning module DetailCustomizations (380)
+[2017.09.02-15.38.26:719][106]LogModuleManager: Shutting down and abandoning module PackagesDialog (378)
+[2017.09.02-15.38.26:719][106]LogModuleManager: Shutting down and abandoning module Persona (376)
+[2017.09.02-15.38.26:720][106]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (375)
+[2017.09.02-15.38.26:720][106]LogModuleManager: Shutting down and abandoning module AnimGraph (373)
+[2017.09.02-15.38.26:720][106]LogModuleManager: Shutting down and abandoning module Kismet (370)
+[2017.09.02-15.38.26:743][106]LogModuleManager: Shutting down and abandoning module ClassViewer (368)
+[2017.09.02-15.38.26:745][106]LogModuleManager: Shutting down and abandoning module Toolbox (366)
+[2017.09.02-15.38.26:745][106]LogModuleManager: Shutting down and abandoning module ModuleUI (364)
+[2017.09.02-15.38.26:745][106]LogModuleManager: Shutting down and abandoning module MovieSceneTools (362)
+[2017.09.02-15.38.26:745][106]LogModuleManager: Shutting down and abandoning module OutputLog (360)
+[2017.09.02-15.38.26:745][106]LogModuleManager: Shutting down and abandoning module GammaUI (358)
+[2017.09.02-15.38.26:745][106]LogModuleManager: Shutting down and abandoning module Documentation (356)
+[2017.09.02-15.38.26:746][106]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (354)
+[2017.09.02-15.38.26:746][106]LogModuleManager: Shutting down and abandoning module MovieScene (352)
+[2017.09.02-15.38.26:746][106]LogModuleManager: Shutting down and abandoning module Niagara (350)
+[2017.09.02-15.38.26:746][106]LogModuleManager: Shutting down and abandoning module NiagaraEditor (349)
+[2017.09.02-15.38.26:746][106]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (346)
+[2017.09.02-15.38.26:746][106]LogModuleManager: Shutting down and abandoning module AnalyticsET (344)
+[2017.09.02-15.38.26:746][106]LogModuleManager: Shutting down and abandoning module PortalServices (342)
+[2017.09.02-15.38.26:746][106]LogModuleManager: Shutting down and abandoning module PortalRpc (340)
+[2017.09.02-15.38.26:746][106]LogModuleManager: Shutting down and abandoning module MessagingRpc (338)
+[2017.09.02-15.38.26:746][106]LogModuleManager: Shutting down and abandoning module AIModule (336)
+[2017.09.02-15.38.26:746][106]LogModuleManager: Shutting down and abandoning module GameplayDebugger (335)
+[2017.09.02-15.38.26:746][106]LogModuleManager: Shutting down and abandoning module AITestSuite (333)
+[2017.09.02-15.38.26:746][106]LogModuleManager: Shutting down and abandoning module ProfilerService (330)
+[2017.09.02-15.38.26:797][106]LogModuleManager: Shutting down and abandoning module TaskGraph (328)
+[2017.09.02-15.38.26:797][106]LogModuleManager: Shutting down and abandoning module SteamVRController (326)
+[2017.09.02-15.38.26:797][106]LogModuleManager: Shutting down and abandoning module SteamVR (324)
+[2017.09.02-15.38.26:797][106]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (322)
+[2017.09.02-15.38.26:797][106]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (320)
+[2017.09.02-15.38.26:797][106]LogModuleManager: Shutting down and abandoning module OculusLibrary (318)
+[2017.09.02-15.38.26:797][106]LogModuleManager: Shutting down and abandoning module OculusInput (316)
+[2017.09.02-15.38.26:797][106]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (314)
+[2017.09.02-15.38.26:797][106]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (312)
+[2017.09.02-15.38.26:797][106]LogModuleManager: Shutting down and abandoning module CableComponent (310)
+[2017.09.02-15.38.26:797][106]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (308)
+[2017.09.02-15.38.26:797][106]LogModuleManager: Shutting down and abandoning module AndroidPermission (306)
+[2017.09.02-15.38.26:797][106]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (302)
+[2017.09.02-15.38.26:797][106]LogModuleManager: Shutting down and abandoning module HTML5Networking (300)
+[2017.09.02-15.38.26:797][106]LogModuleManager: Shutting down and abandoning module AlembicImporter (298)
+[2017.09.02-15.38.26:797][106]LogModuleManager: Shutting down and abandoning module AlembicLibrary (297)
+[2017.09.02-15.38.26:797][106]LogModuleManager: Shutting down and abandoning module GeometryCache (296)
+[2017.09.02-15.38.26:797][106]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (295)
+[2017.09.02-15.38.26:797][106]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (290)
+[2017.09.02-15.38.26:797][106]LogModuleManager: Shutting down and abandoning module SuperSearch (289)
+[2017.09.02-15.38.26:797][106]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (286)
+[2017.09.02-15.38.26:797][106]LogModuleManager: Shutting down and abandoning module PluginBrowser (284)
+[2017.09.02-15.38.26:797][106]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (282)
+[2017.09.02-15.38.26:797][106]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (280)
+[2017.09.02-15.38.26:797][106]LogModuleManager: Shutting down and abandoning module DesktopPlatform (279)
+[2017.09.02-15.38.26:797][106]LogModuleManager: Shutting down and abandoning module UObjectPlugin (276)
+[2017.09.02-15.38.26:797][106]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (274)
+[2017.09.02-15.38.26:797][106]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (272)
+[2017.09.02-15.38.26:797][106]LogModuleManager: Shutting down and abandoning module GitSourceControl (270)
+[2017.09.02-15.38.26:797][106]LogModuleManager: Shutting down and abandoning module SourceControl (269)
+[2017.09.02-15.38.26:797][106]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (266)
+[2017.09.02-15.38.26:797][106]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (264)
+[2017.09.02-15.38.26:797][106]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (262)
+[2017.09.02-15.38.26:797][106]LogModuleManager: Shutting down and abandoning module Paper2DEditor (260)
+[2017.09.02-15.38.26:798][106]LogModuleManager: Shutting down and abandoning module MeshPaint (259)
+[2017.09.02-15.38.26:798][106]LogModuleManager: Shutting down and abandoning module LevelEditor (257)
+[2017.09.02-15.38.26:799][106]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (256)
+[2017.09.02-15.38.26:799][106]LogModuleManager: Shutting down and abandoning module MainFrame (254)
+[2017.09.02-15.38.26:799][106]LogModuleManager: Shutting down and abandoning module HotReload (253)
+[2017.09.02-15.38.26:799][106]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (248)
+[2017.09.02-15.38.26:799][106]LogModuleManager: Shutting down and abandoning module PhysXVehicles (246)
+[2017.09.02-15.38.26:799][106]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (244)
+[2017.09.02-15.38.26:799][106]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (242)
+[2017.09.02-15.38.26:799][106]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (240)
+[2017.09.02-15.38.26:799][106]LogModuleManager: Shutting down and abandoning module UdpMessaging (238)
+[2017.09.02-15.38.26:900][106]LogModuleManager: Shutting down and abandoning module TcpMessaging (236)
+[2017.09.02-15.38.27:001][106]LogModuleManager: Shutting down and abandoning module DonAINavigation (234)
+[2017.09.02-15.38.27:001][106]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (232)
+[2017.09.02-15.38.27:001][106]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (230)
+[2017.09.02-15.38.27:001][106]LogModuleManager: Shutting down and abandoning module FacialAnimation (228)
+[2017.09.02-15.38.27:001][106]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (226)
+[2017.09.02-15.38.27:001][106]LogModuleManager: Shutting down and abandoning module GraphEditor (225)
+[2017.09.02-15.38.27:001][106]LogModuleManager: Shutting down and abandoning module ContentBrowser (223)
+[2017.09.02-15.38.27:004][106]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (220)
+[2017.09.02-15.38.27:004][106]LogModuleManager: Shutting down and abandoning module Paper2D (218)
+[2017.09.02-15.38.27:004][106]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (216)
+[2017.09.02-15.38.27:004][106]LogModuleManager: Shutting down and abandoning module WmfMedia (214)
+[2017.09.02-15.38.27:004][106]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (212)
+[2017.09.02-15.38.27:004][106]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (210)
+[2017.09.02-15.38.27:004][106]LogModuleManager: Shutting down and abandoning module MediaAssets (208)
+[2017.09.02-15.38.27:004][106]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (206)
+[2017.09.02-15.38.27:004][106]LogModuleManager: Shutting down and abandoning module VREditor (204)
+[2017.09.02-15.38.27:005][106]LogModuleManager: Shutting down and abandoning module StringTableEditor (202)
+[2017.09.02-15.38.27:005][106]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (200)
+[2017.09.02-15.38.27:005][106]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (198)
+[2017.09.02-15.38.27:005][106]LogModuleManager: Shutting down and abandoning module FunctionalTesting (196)
+[2017.09.02-15.38.27:005][106]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (194)
+[2017.09.02-15.38.27:005][106]LogModuleManager: Shutting down and abandoning module UMG (192)
+[2017.09.02-15.38.27:005][106]LogModuleManager: Shutting down and abandoning module UMGEditor (191)
+[2017.09.02-15.38.27:005][106]LogModuleManager: Shutting down and abandoning module Sequencer (190)
+[2017.09.02-15.38.27:005][106]LogModuleManager: Shutting down and abandoning module AssetTools (188)
+[2017.09.02-15.38.27:005][106]LogModuleManager: Shutting down and abandoning module MessageLog (187)
+[2017.09.02-15.38.27:005][106]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (186)
+[2017.09.02-15.38.27:005][106]LogModuleManager: Shutting down and abandoning module SlateReflector (180)
+[2017.09.02-15.38.27:005][106]LogModuleManager: Shutting down and abandoning module Slate (178)
+[2017.09.02-15.38.27:006][106]LogModuleManager: Shutting down and abandoning module EditorStyle (176)
+[2017.09.02-15.38.27:012][106]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (174)
+[2017.09.02-15.38.27:012][106]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (172)
+[2017.09.02-15.38.27:012][106]LogModuleManager: Shutting down and abandoning module XAudio2 (170)
+[2017.09.02-15.38.27:012][106]LogModuleManager: Shutting down and abandoning module Networking (168)
+[2017.09.02-15.38.27:012][106]LogModuleManager: Shutting down and abandoning module Core (164)
+[2017.09.02-15.38.27:012][106]LogModuleManager: Shutting down and abandoning module AssetRegistry (162)
+[2017.09.02-15.38.27:201][106]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.09.02-15.38.27:201][106]LogDirectoryWatcher: A directory notification for 'H:/git/UE4_Person/Content/' was aborted.
+[2017.09.02-15.38.27:201][106]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.09.02-15.38.27:201][106]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Marketplace/DonAINavigation/Content/' was aborted.
+[2017.09.02-15.38.27:201][106]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/GearVR/Content/' was aborted.
+[2017.09.02-15.38.27:205][106]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (161)
+[2017.09.02-15.38.27:206][106]LogModuleManager: Shutting down and abandoning module KismetCompiler (158)
+[2017.09.02-15.38.27:206][106]LogModuleManager: Shutting down and abandoning module LevelSequence (156)
+[2017.09.02-15.38.27:206][106]LogModuleManager: Shutting down and abandoning module PhysXFormats (154)
+[2017.09.02-15.38.27:206][106]LogModuleManager: Shutting down and abandoning module MeshUtilities (152)
+[2017.09.02-15.38.27:206][106]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (151)
+[2017.09.02-15.38.27:206][106]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (149)
+[2017.09.02-15.38.27:206][106]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (147)
+[2017.09.02-15.38.27:206][106]LogModuleManager: Shutting down and abandoning module DerivedDataCache (144)
+[2017.09.02-15.38.27:303][106]LogDerivedDataCache: Shutdown
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module TargetPlatform (142)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (141)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (139)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (137)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (135)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (133)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (131)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (129)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (127)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (125)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (123)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module ImageWrapper (122)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (119)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (117)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (115)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (113)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (111)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (109)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (107)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (105)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (103)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module Messaging (101)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (99)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (97)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (95)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (93)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (91)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (89)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (87)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (85)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (83)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (81)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (79)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (77)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (75)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (73)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (71)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (69)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (67)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (65)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (63)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module InputCore (60)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module Settings (58)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module OculusRift (56)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module GearVRController (54)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module GearVR (52)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (50)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
+[2017.09.02-15.38.27:303][106]LogOnline:Display: Unloading online subsystem: NULL
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module XMPP (43)
+[2017.09.02-15.38.27:303][106]LogModuleManager: Shutting down and abandoning module HTTP (41)
+[2017.09.02-15.38.27:304][106]LogHttp:Display: Http module shutting down, but needs to wait on 2 outstanding Http requests:
+[2017.09.02-15.38.27:304][106]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BEBC646A3-43D9-2384-4901-DD85EC0803BF%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.16.2-3514769%2B%2B%2BUE4%2BRelease-4.16&UserID=180b531d487fd4437f7d8080d4b2669e%7C669d81abcf4f493ea240738fd86bce3f%7Ca0e9b169-234f-44a8-aa3a-71a9baeb1230&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.09.02-15.38.27:304][106]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BEBC646A3-43D9-2384-4901-DD85EC0803BF%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.16.2-3514769%2B%2B%2BUE4%2BRelease-4.16&UserID=180b531d487fd4437f7d8080d4b2669e%7C669d81abcf4f493ea240738fd86bce3f%7Ca0e9b169-234f-44a8-aa3a-71a9baeb1230&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.09.02-15.38.27:337][106]LogModuleManager: Shutting down and abandoning module SSL (40)
+[2017.09.02-15.38.27:339][106]LogModuleManager: Shutting down and abandoning module HTTPChunkInstaller (36)
+[2017.09.02-15.38.27:339][106]LogModuleManager: Shutting down and abandoning module AnimationModifiers (34)
+[2017.09.02-15.38.27:339][106]LogModuleManager: Shutting down and abandoning module PropertyEditor (33)
+[2017.09.02-15.38.27:339][106]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2017.09.02-15.38.27:339][106]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2017.09.02-15.38.27:339][106]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2017.09.02-15.38.27:339][106]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2017.09.02-15.38.27:339][106]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2017.09.02-15.38.27:341][106]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2017.09.02-15.38.27:341][106]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2017.09.02-15.38.27:341][106]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2017.09.02-15.38.27:341][106]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2017.09.02-15.38.27:341][106]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2017.09.02-15.38.27:341][106]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2017.09.02-15.38.27:341][106]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2017.09.02-15.38.27:341][106]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.09.02-15.38.27:342][106]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.09.02-15.38.27:342][106]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.09.02-15.38.27:343][106]LogExit: Exiting.
+[2017.09.02-15.38.27:360][106]Log file closed, 09/02/17 18:38:27
