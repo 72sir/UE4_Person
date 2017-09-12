@@ -24,3 +24,7 @@ UE4 - Работа с персонажем по стриму https://www.youtube
 Взаимодействие персонажа с окружающим миром (Кирка - камень)
 
 ![45](https://user-images.githubusercontent.com/11897341/30249955-4747819e-964f-11e7-812a-6deb31ec0edb.gif)
+
+Стол для крафта при наличии предметов в инвенторе.
+
+![crafttable-iloveimg-compressed](https://user-images.githubusercontent.com/11897341/30336040-ab91e628-97ec-11e7-85b6-f468fbe8d479.gif)
