@@ -28,3 +28,7 @@ UE4 - Работа с персонажем по стриму https://www.youtube
 Стол для крафта при наличии предметов в инвенторе.
 
 ![crafttable-iloveimg-compressed](https://user-images.githubusercontent.com/11897341/30336040-ab91e628-97ec-11e7-85b6-f468fbe8d479.gif)
+
+Работа с инвентарем персонажа - переложить определенное количество предметов.
+
+![8-iloveimg-compressed](https://user-images.githubusercontent.com/11897341/30501454-3798dcb4-9a6b-11e7-9aca-cdefe07ed586.gif)
