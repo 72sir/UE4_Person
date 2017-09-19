@@ -36,6 +36,8 @@ UE4 - Работа с персонажем по стриму https://www.youtube
 Смена дня и ночи
 ![4-iloveimg-compressed](https://user-images.githubusercontent.com/11897341/30611683-bb681b14-9d8a-11e7-86d8-834c4dcf1358.gif)
 
+Костер - Закат ) атмосфера )
+![45-iloveimg-compressed](https://user-images.githubusercontent.com/11897341/30612042-fce5aa24-9d8b-11e7-9577-09e77f9aefe5.gif)
 
 
 
