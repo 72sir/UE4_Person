@@ -32,3 +32,11 @@ UE4 - Работа с персонажем по стриму https://www.youtube
 Работа с инвентарем персонажа - переложить определенное количество предметов.
 
 ![8-iloveimg-compressed](https://user-images.githubusercontent.com/11897341/30501454-3798dcb4-9a6b-11e7-9aca-cdefe07ed586.gif)
+
+Смена дня и ночи
+![4-iloveimg-compressed](https://user-images.githubusercontent.com/11897341/30611683-bb681b14-9d8a-11e7-86d8-834c4dcf1358.gif)
+
+
+
+
+
