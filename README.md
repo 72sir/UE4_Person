@@ -39,6 +39,11 @@ UE4 - Работа с персонажем по стриму https://www.youtube
 Костер - Закат ) атмосфера )
 ![45-iloveimg-compressed](https://user-images.githubusercontent.com/11897341/30612042-fce5aa24-9d8b-11e7-9577-09e77f9aefe5.gif)
 
+Разработка NPC зомби 
+![zombi - attack 2 -iloveimg-compressed-iloveimg-resized-iloveimg-compressed](https://user-images.githubusercontent.com/11897341/30786430-05607832-a17e-11e7-990c-160f5748b1ee.gif)
+
+![zombi - attack-iloveimg-compressed-iloveimg-resized-iloveimg-compressed](https://user-images.githubusercontent.com/11897341/30786448-6a967a6c-a17e-11e7-9caf-aaef7eb1e8c7.gif)
+
 
 
 
